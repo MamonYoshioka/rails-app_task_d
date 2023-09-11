@@ -22,7 +22,7 @@
             <%= render "favorites/btn", book: @book %>
           </td>
           <td>view count : <%= @book.read_counts.count %></td>
-          <td><%= render "static.rate", book: @book %></td>
+          <td><%= render "books/static.rate", book: @book %></td>
 
 
           <% if @book.user == current_user %>
